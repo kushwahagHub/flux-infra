@@ -1,0 +1,13 @@
+apiVersion: source.toolkit.fluxcd.io/v1beta1
+kind: GitRepository
+metadata:
+  name: charts-repo
+  namespace: flux-system
+spec:
+  interval: 30s
+  ref:
+    branch: master
+  url: http://github.com/kushwahagHub/flux-sample-charts
+  secretRef:
+    name: git-credentials
+  recursiveSubmodule: true
