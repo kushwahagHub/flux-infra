@@ -12,7 +12,6 @@ spec:
         name: charts-repo
   install: {}
   interval: 30s
-  targetNamespace: amazon-cloudwatch
   values:
     autoDiscovery:
       clusterName: cluster.local
