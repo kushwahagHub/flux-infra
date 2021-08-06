@@ -7,7 +7,7 @@ spec:
   interval: 15m
   dependsOn:
     - name: infrastructure
-  path: "../system-apps-overlay"
+  path: "./environments/dev/system-apps-overlay"
   prune: true
   sourceRef:
     kind: GitRepository
