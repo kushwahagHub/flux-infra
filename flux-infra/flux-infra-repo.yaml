@@ -10,4 +10,3 @@ spec:
   url: http://github.com/kushwahagHub/flux-infra
   secretRef:
     name: git-credentials
-  recursiveSubmodule: true

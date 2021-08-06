@@ -10,4 +10,3 @@ spec:
   url: http://github.com/kushwahagHub/flux-sample-charts
   secretRef:
     name: git-credentials
-  recursiveSubmodule: true
