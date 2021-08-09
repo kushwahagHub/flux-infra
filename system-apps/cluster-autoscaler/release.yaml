@@ -6,10 +6,15 @@ apiVersion: helm.toolkit.fluxcd.io/v2beta1
  spec:
    chart:
      spec:
-       version: "=9.10.3"
+       chart: cluster-autoscaler
+       sourceRef:
+         kind: GitRepository
+         name: charts-repo
+   install: {}
+   interval: 30s
    targetNamespace: amazon-cloudwatch
    values:
      autoDiscovery:
-       clusterName: docker-desktop
+       clusterName: cluster.local
      image:
-       tag: v1.21.0 
+       tag: v1.21.0
