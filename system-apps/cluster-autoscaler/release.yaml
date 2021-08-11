@@ -8,8 +8,9 @@ spec:
     spec:
       chart: cluster-autoscaler
       sourceRef:
-        kind: GitRepository
+        kind: HelmRepository
         name: charts-repo
+        namespace: flux-system
   install: {}
   interval: 30s
   targetNamespace: amazon-cloudwatch
