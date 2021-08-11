@@ -3,4 +3,5 @@ kind: Kustomization
 resources:
 - install.yaml
 - flux-infra-repo.yaml
-- charts-repo.yaml
+- cloudwatch-metrics.yaml
+- cluster-autoscaler.yaml

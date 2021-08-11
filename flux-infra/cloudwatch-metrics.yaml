@@ -1,0 +1,9 @@
+apiVersion: source.toolkit.fluxcd.io/v1beta1
+kind: HelmRepository
+metadata:
+  name: aws-cloudwatch-metrics
+spec:
+  interval: 30s
+  url: http://github.com/kushwahagHub/flux-sample-charts/aws-cloudwatch-metrics
+  secretRef:
+    name: git-credentials

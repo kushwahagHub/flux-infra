@@ -1,0 +1,9 @@
+apiVersion: source.toolkit.fluxcd.io/v1beta1
+kind: HelmRepository
+metadata:
+  name: cluster-autoscaler
+spec:
+  interval: 30s
+  url: http://github.com/kushwahagHub/flux-sample-charts/cluster-autoscaler
+  secretRef:
+    name: git-credentials

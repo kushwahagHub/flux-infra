@@ -9,7 +9,7 @@ spec:
       chart: aws-cloudwatch-metrics
       sourceRef:
         kind: HelmRepository
-        name: charts-repo
+        name: aws-cloudwatch-metrics
         namespace: flux-system
   install: {}
   interval: 30s
