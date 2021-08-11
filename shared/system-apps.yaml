@@ -19,6 +19,6 @@ spec:
       namespace: flux-system
     - apiVersion: helm.toolkit.fluxcd.io/v1beta1
       kind: HelmRelease
-      name: flux-system
-      namespace: amazon-cloudwatch
+      name: cluster-autoscaler
+      namespace: flux-system
   timeout: 5m
