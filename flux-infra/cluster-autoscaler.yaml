@@ -2,6 +2,7 @@ apiVersion: source.toolkit.fluxcd.io/v1beta1
 kind: HelmRepository
 metadata:
   name: cluster-autoscaler
+  namespace: flux-system
 spec:
   interval: 30s
   url: http://github.com/kushwahagHub/flux-sample-charts/cluster-autoscaler
