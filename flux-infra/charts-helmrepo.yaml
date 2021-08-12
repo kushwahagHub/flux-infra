@@ -5,6 +5,6 @@ metadata:
   namespace: flux-system
 spec:
   interval: 30s
-  url: http://github.com/kushwahagHub/flux-sample-charts
+  url: https://kushwahaghub.github.io/flux-sample-charts
   secretRef:
     name: git-credentials
