@@ -9,7 +9,7 @@ spec:
       chart: cluster-autoscaler
       sourceRef:
         kind: HelmRepository
-        name: cluster-autoscaler
+        name: charts-helm
         namespace: flux-system
   install: {}
   interval: 30s
