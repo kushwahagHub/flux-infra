@@ -6,7 +6,7 @@ metadata:
 spec:
   chart:
     spec:
-      version: "=1.247345"
+      version: "=0.0.5"
   targetNamespace: amazon-cloudwatch
   values:
     clusterName: docker-desktop
