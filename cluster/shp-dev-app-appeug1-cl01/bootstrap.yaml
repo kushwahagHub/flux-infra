@@ -11,6 +11,17 @@ spec:
   secretRef:
     name: git-credentials
 ---
+apiVersion: source.toolkit.fluxcd.io/v1beta1
+kind: HelmRepository
+metadata:
+  name: charts-helm
+  namespace: flux-system
+spec:
+  interval: 30s
+  url: https://kushwahaghub.github.io/flux-sample-charts
+  secretRef:
+    name: git-credentials
+---
 apiVersion: kustomize.toolkit.fluxcd.io/v1beta1
 kind: Kustomization
 metadata:
