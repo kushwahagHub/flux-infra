@@ -12,4 +12,3 @@ patchesJSON6902:
     - op: replace
       path: /spec/chart/spec/version
       value: =9.10.3
-EOF
