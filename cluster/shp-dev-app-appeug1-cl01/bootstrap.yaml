@@ -4,7 +4,7 @@ metadata:
   name: flux-infra-repos
   namespace: flux-system
 spec:
-  interval: 30s
+  interval: 5s
   ref:
     branch: flux-infra-v1
   url: http://github.com/kushwahagHub/flux-infra
@@ -17,7 +17,7 @@ metadata:
   name: charts-helm
   namespace: flux-system
 spec:
-  interval: 30s
+  interval: 5s
   url: https://kushwahaghub.github.io/flux-sample-charts
   secretRef:
     name: git-credentials
