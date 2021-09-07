@@ -1,0 +1,26 @@
+apiVersion: source.toolkit.fluxcd.io/v1beta1
+kind: GitRepository
+metadata:
+  name: flux-infra-repos
+  namespace: flux-system
+spec:
+  interval: 30s
+  ref:
+    branch: flux-infra-v1
+  url: http://github.com/kushwahagHub/flux-infra
+  secretRef:
+    name: git-credentials
+---
+apiVersion: kustomize.toolkit.fluxcd.io/v1beta1
+kind: Kustomization
+metadata:
+  name: bootstrap
+  namespace: flux-system
+spec:
+  interval: 15m
+  path: "./cluster/shp-dev-app-appeug1-cl01"
+  prune: true
+  sourceRef:
+    kind: GitRepository
+    name: flux-infra-repos
+  timeout: 5m
